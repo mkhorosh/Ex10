@@ -36,7 +36,7 @@ class MyStack {
   T pop() {
     if (this->top != -1) {
       T top = this->stack[(this->top)];
-      this->stack[(this->top)--] = 0;
+      this->stack[(this->top)--] = {};
       return top;
     } else {
       throw "out of range";
