@@ -38,7 +38,8 @@ std::string infix2postfix(std::string infix) {
       i++;
       continue;
     }
-    if (ss != "" && ss != "(" && ss != ")" && ss != "+" && ss != "-" && ss != "*" && ss != "/") {
+    if (ss != "" && ss != "(" && ss != ")" && ss != "+" && ss != "-"
+    && ss != "*" && ss != "/") {
       postfix += ss;  // push if operator(not operation)
       postfix += " ";
     } else if (ss == "(") {  // '(' - 0 priority
